@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e8d6c0;
+}
+
+.container {
+    margin: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+    margin-top: -30px;
+
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+    size: 40px;
+}
+
+.list {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-size: 20px;
+}
+
+.main {
+    background-image: url(./asset/Gemini_Generated_Image_uy0x0juy0x0juy0x-removebg-preview.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    color: #e8d6c0;
+}
+
+.content-1 {
+    position: absolute;
+    color: #e8d6c0;
+    top: 35%;
+    left: 5%;
+    font-size: 35px;
+}
+
+.content-1 button {
+    padding: 5px;
+    border-radius: 18px;
+    width: 100px;
+    border: none;
+}
+
+.categories {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.card {
+    width: 15vw;
+    height: 25vh;
+    margin-top: 30px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.card-2 {
+    width: 15vw;
+    /* height: 25vh; */
+    margin-top: 30px;
+    background-color: rgb(157, 135, 106);
+    border-radius: 20px;
+}
+
+.card-2 img {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.btn button {
+    background-color: lightslategray;
+    border: none;
+    padding: 5px;
+    width: 100px;
+    border-radius: 8px;
+    color: white;
+}
+
+.footer-1 {
+    background-color: black;
+    height: 400px;
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card-3 {
+    margin-top: 70px;
+}
+
+.card-3 ul {
+    margin-top: 20px;
+    list-style: none;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-2 {
+    height: 40px;
+    background-color: rgb(157, 135, 106);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-2 ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    gap: 50px;
+}
+
+@media (max-width: 992px) {
+
+    .list {
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .content-1 {
+        font-size: 28px;
+    }
+
+    .items {
+        gap: 20px;
+    }
+
+    .card, .card-2 {
+        width: 25vw;
+    }
+
+    .footer-1 {
+        flex-wrap: wrap;
+        height: auto;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .main {
+        height: 70vh;
+        background-position: center;
+    }
+
+    .content-1 {
+        font-size: 24px;
+        left: 10%;
+        top: 40%;
+    }
+
+    .items {
+        flex-wrap: wrap;
+    }
+
+    .card, .card-2 {
+        width: 40vw;
+    }
+
+    .footer-1 {
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+        padding: 40px ;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .logo img {
+        height: 60px;
+    }
+
+    .list {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .content-1 {
+        font-size: 20px;
+        top: 45%;
+        left: 8%;
+    }
+
+    .card, .card-2 {
+        width: 80vw;
+    }
+
+    .card-2 .btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-2 ul {
+        display: none;
+    }
+}
